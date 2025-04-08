@@ -1,0 +1,206 @@
+
+/* Buttons */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #218838;
+}
+
+.form-container .modal-close-button {
+  background: #dc3545;
+  margin-top: 20px;
+}
+
+.form-container .modal-close-button:hover {
+  background: #c82333;
+}
+
+/* Message Styling */
+.message {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ReactModal__Content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-question {
+  margin-bottom: 15px;
+}
+
+/* Evaluation List */
+.evaluation-list {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Tables */
+.evaluation-list h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Report Dashboard */
+.report-container {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Controls */
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+/* Table spacing */
+.table-separator {
+  margin: 30px 0;
+}
+
+/* Make sortable columns look clickable */
+.sortable {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .form-container, .evaluation-list, .report-container {
+    width: 90%;
+  }
+}
+
+.sortable.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border: 1px solid #999;
+}
+
+.user-info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.evaluation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  overflow-x: auto;
+}
+
+.evaluation-table th, .evaluation-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.evaluation-table th {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.evaluation-table td {
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .evaluation-table {
+    font-size: 12px;
+  }
+}

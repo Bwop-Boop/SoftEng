@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Background Panel */
+.background-panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50px; /* Adjusted to start below the fixed header */
+  background: linear-gradient(180deg, #7318C2 24.52%, #360B5C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add Store Form */
+.add-store-form {
+
+  width: 400px; /* Adjusted to be a bit smaller */
+  background: #FFFEFE;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 50px 50px; /* Adjusted padding to maintain proportions */
+  position: relative;
+  margin: auto auto; /* Center horizontally */
+  border-radius: 20px;
+
+}
+
+/* ADD STORE INFORMATION Text */
+.add-store-info-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* Store Name Text */
+.store-name-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  text-align: center; /* Centered text */
+}
+
+/* Store Name Field */
+.store-name-field {
+  width: 100%;
+  height: 40px; /* Adjusted height to be a bit smaller */
+  background: #DEDDDD;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.message{
+  width: 100%;
+  height: 40px; /* Adjusted height to be a bit smaller */
+
+    text-align:center;
+  margin-bottom: 20px;
+   color:gray;
+  font-size: 13px;
+  border: none;
+}
+
+/* Store Address Text */
+.store-address-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  text-align: center; /* Centered text */
+}
+/* Add this CSS to your storeforms.css file */
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc; /* Optional: change background color to indicate disabled state */
+}
+/* Store Address Field */
+.store-address-field {
+  width: 100%;
+  height: 40px; /* Adjusted height to be a bit smaller */
+  background: #DEDDDD;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Audit Schedule Text */
+.audit-schedule-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  text-align: center; /* Centered text */
+}
+
+/* Date Field */
+.date-field {
+  width: 100%;
+  height: 40px; /* Adjusted height to be a bit smaller */
+  background: #DEDDDD;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  height: 76px; /* 10% bigger */
+  background: linear-gradient(90deg, #591CD2 24.04%, #2E0E6C 100%);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px; /* 10% bigger */
+  line-height: 130%;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.submit-button:hover {
+  background: linear-gradient(90deg, #3e0a8c 24.04%, #1e064a 100%);
+}

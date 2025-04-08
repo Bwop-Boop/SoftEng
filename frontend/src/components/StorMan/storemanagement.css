@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Background Panel */
+.background-panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(180deg, #7318C2 24.52%, #360B5C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Store Management */
+.store-management {
+  margin-bottom: 100px;
+  width: 60%; /* Adjusted to be a bit smaller */
+  background: #FFFEFE;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px; /* Adjusted padding to maintain proportions */
+  position: relative;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px;
+  max-height: 75%; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+/* Store Management Header */
+.store-management h2 {
+  margin-top: -15px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Container */
+.table-container {
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+/* Store Table */
+.store-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #000; /* Add border to the table */
+}
+
+.store-table th, .store-table td {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  text-align: center; /* Centered text */
+  border: 1px solid #000; /* Add border to table cells */
+}
+
+.store-table th {
+  background-color: #DEDDDD;
+}
+
+.store-table td {
+  background-color: #F4F4F4;
+}
+
+/* Buttons */
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Button */
+.edit-button {
+  background: linear-gradient(90deg, #00A8E8 24.04%, #007EA7 100%);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.edit-button:hover {
+  background: linear-gradient(90deg, #007EA7 24.04%, #005073 100%);
+}
+
+/* Delete Button */
+.delete-button {
+  background: linear-gradient(90deg, #E74C3C 24.04%, #C0392B 100%);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background: linear-gradient(90deg, #C0392B 24.04%, #A93226 100%);
+}
+
+/* Save Button */
+.save-button {
+  background: linear-gradient(90deg, #28A745 24.04%, #218838 100%);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.save-button:hover {
+  background: linear-gradient(90deg, #218838 24.04%, #1E7E34 100%);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 400px; /* Adjusted to be a bit smaller */
+  background: #FFFEFE;
+  padding: 50px; /* Adjusted padding */
+  border-radius: 10px;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  display: block;
+  text-align: center; /* Centered text */
+}
+
+.modal-content input {
+  width: 100%;
+  height: 40px; /* Adjusted height to be a bit smaller */
+  background: #DEDDDD;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  text-align: center; /* Centered text */
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-actions button {
+  width: 110px;
+  height: 40px;
+}

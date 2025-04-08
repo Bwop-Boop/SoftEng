@@ -1,0 +1,289 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.background-panel-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(180deg, #7318C2 24.52%, #360B5C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Store Management */
+.store-management-list {
+  top: 60px;
+  bottom: 100px;
+  width: 90%;
+  height: 80%;
+  background: #FFFEFE;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  max-height: 90vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+/* Form Header */
+.store-management-list h2 {
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Filters Container */
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Filter Group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Labels */
+.store-management-list label,
+.modal-content-list label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+  text-align: center; /* Center text in modal labels */
+}
+
+/* Select Field */
+.store-management-list select, .store-management-list input,
+.modal-content-list select, .modal-content-list input {
+  width: 200px;
+  height: 40px;
+  background: #DEDDDD;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Table */
+.evaluation-table-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.evaluation-table-list th, .evaluation-table-list td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.evaluation-table-list th {
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.evaluation-table-list td {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* Sortable Headers */
+.sortable {
+  position: relative;
+}
+
+.sortable::after {
+  content: ' ▼';
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  color: #000;
+}
+
+.sortable.asc::after {
+  content: ' ▲';
+}
+
+/* Evaluation Details */
+.evaluation-details {
+  background: #F8F8F8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.evaluation-detail {
+  margin-bottom: 20px;
+}
+
+.evaluation-detail h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.evaluation-detail h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #7207C4;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  display: inline;
+}
+
+/* Category */
+.category {
+  margin-bottom: 20px;
+}
+
+.category h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  text-shadow: 7px 1px 14px black;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.category strong {
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-edit, .btn-delete, .btn-save, .btn-cancel {
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-edit {
+  background: #28A745;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+  background: #218838;
+}
+
+.btn-delete {
+  background: #DC3545;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background: #C82333;
+}
+
+.btn-save {
+  background: #007BFF;
+  transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+  background: #0056b3;
+}
+
+.btn-cancel {
+  background: #6C757D;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: #5a6268;
+}
+
+/* Modal */
+.modal-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content-list {
+  background: #FFFEFE;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center; /* Center the text */
+}
+
+.modal-content-list h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
